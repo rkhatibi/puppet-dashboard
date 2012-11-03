@@ -79,6 +79,12 @@ class Node < ActiveRecord::Base
     SETTINGS.numeric_url_slugs ? id.to_s : name
   end
 
+  # Enforce lowercase node name
+  before_save :name_downcase
+  def name_downcase
+    self.name.downcase!
+  end
+
   def self.find_by_id_or_name!(identifier)
     find_by_id(identifier) or find_by_name!(identifier)
   end
