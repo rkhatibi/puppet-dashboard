@@ -213,6 +213,7 @@ DEPENDENCIES
   shoulda-matchers
   sqlite3
   system_timer
+  therubyracer
   thin
   timeline_fu (~> 0.3.0)
   uglifier (~> 1.0)
