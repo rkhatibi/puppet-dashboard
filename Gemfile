@@ -40,7 +40,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rspec-html-matchers'
   gem 'execjs'
-  gem 'therubyracer'
+  gem 'libv8', '~> 3.11.8'
+  gem 'therubyracer', '~> 0.11.0'
 end
 
 group :postgresql do
